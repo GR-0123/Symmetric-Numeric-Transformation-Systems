@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symmetric Numeric Transformation Systems</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .slide {
+            page-break-after: always;
+            height: 100vh;
+            padding: 40px;
+            background: white;
+            position: relative;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .slide-content {
+            max-width: 900px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+        
+        h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2980b9;
+        }
+        
+        p {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .title-slide {
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .title-slide h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        
+        .title-slide p {
+            font-size: 24px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .set1 {
+            background-color: #cce5ff;
+            color: #004085;
+        }
+        
+        .set2 {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .set3 {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        
+        .highlight {
+            font-weight: bold;
+            background-color: #ffffcc;
+        }
+        
+        .diagram {
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        
+        .flex-item {
+            flex: 1;
+            padding: 15px;
+        }
+        
+        .centered {
+            text-align: center;
+        }
+        
+        .mirror-table td.mirror {
+            background-color: #e8f4f8;
+        }
+        
+        .mirror-relationship {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .median-highlight {
+            background-color: #e8daef;
+            color: #6c3483;
+        }
+        
+        @media print {
+            .slide {
+                page-break-after: always;
+                border: none;
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Title Slide -->
+<div class="slide">
+    <div class="slide-content title-slide">
+        <h1>Symmetric Numeric Transformation Systems:</h1>
+        <h2>A Novel Mathematical Discovery</h2>
+        <p style="font-size: 22px; margin-top: 20px;">Featuring the Tri-Set Numeric Interaction System & Number Mirror Symmetry</p>
+        <p style="margin-top: 50px;">© 2025</p>
+        <div class="footer">1</div>
+    </div>
+</div>
+
+<!-- Abstract -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Abstract</h2>
+        <p>This research introduces two innovative numeric transformation systems with unique properties:</p>
+        <ul>
+            <li><strong>Tri-Set Numeric Interaction System:</strong> A framework organizing numbers into three sets with distinct combination rules</li>
+            <li><strong>Number Mirror Symmetry:</strong> A system rooted in modular arithmetic that reveals mirror relationships preserving digital roots</li>
+        </ul>
+        <p>Both systems reveal intricate relationships between numeric sets and demonstrate unexpected computational behaviors and structural symmetries.</p>
+        <div class="footer">2</div>
+    </div>
+</div>
+
+<!-- Introduction -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Introduction</h2>
+        <p>Mathematical exploration often uncovers surprising patterns in numeric interactions.</p>
+        <ul>
+            <li>This research presents two independently discovered numeric transformation systems</li>
+            <li>Both systems diverge from conventional computation methods</li>
+            <li>They showcase the depth of number theory and modular arithmetic</li>
+            <li>Potential applications include cryptography, algorithmic design, and mathematical education</li>
+        </ul>
+        <div class="footer">3</div>
+    </div>
+</div>
+
+<!-- System 1 Overview -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Tri-Set Numeric Interaction System</h2>
+        <h3>Set Composition</h3>
+        <div class="flex-container">
+            <div class="flex-item set1">
+                <h3 class="centered">Set 1</h3>
+                <p class="centered">[1, 4, 7]</p>
+            </div>
+            <div class="flex-item set2">
+                <h3 class="centered">Set 2</h3>
+                <p class="centered">[2, 5, 8]</p>
+            </div>
+            <div class="flex-item set3">
+                <h3 class="centered">Set 3</h3>
+                <p class="centered">[3, 6, 9]</p>
+            </div>
+        </div>
+        <p>System 1 organizes single-digit numbers into three sets with distinct interaction rules when numbers are combined through addition.</p>
+        <div class="footer">4</div>
+    </div>
+</div>
+
+<!-- System 1 Rules -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Tri-Set Numeric Interaction: Rules</h2>
+        
+        <h3>Intra-Set Interactions</h3>
+        <p>When numbers within <span class="set1">Set 1</span> or <span class="set2">Set 2</span> are added, the result transforms to a number in the complementary set.</p>
+        <ul>
+            <li><span class="set1">Set 1:</span> 1 + 4 = 5 (a <span class="set2">Set 2</span> number)</li>
+            <li><span class="set2">Set 2:</span> 2 + 5 = 7 (a <span class="set1">Set 1</span> number)</li>
+        </ul>
+        
+        <h3>Inter-Set Interactions</h3>
+        <p>When numbers from different sets (<span class="set1">Set 1</span> and <span class="set2">Set 2</span>) are added, the result always belongs to <span class="set3">Set 3</span>.</p>
+        <ul>
+            <li>1 + 2 = 3 (<span class="set3">Set 3</span>)</li>
+            <li>4 + 5 = 9 (<span class="set3">Set 3</span>)</li>
+            <li>7 + 8 = 15 → 1 + 5 = 6 (<span class="set3">Set 3</span>)</li>
+        </ul>
+        <div class="footer">5</div>
+    </div>
+</div>
+
+<!-- System 1 Rules Continued -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Tri-Set System: <span class="set3">Set 3</span> Unique Behavior</h2>
+        
+        <h3><span class="set3">Set 3</span> Interactions</h3>
+        <ul>
+            <li>Adding two <span class="set3">Set 3</span> numbers results in another <span class="set3">Set 3</span> number:
+                <ul>
+                    <li>3 + 6 = 9 (<span class="set3">Set 3</span>)</li>
+                    <li>6 + 9 = 15 → 1 + 5 = 6 (<span class="set3">Set 3</span>)</li>
+                </ul>
+            </li>
+            <li>Adding a <span class="set3">Set 3</span> number to a <span class="set1">Set 1</span> number returns a <span class="set1">Set 1</span> number:
+                <ul>
+                    <li>3 + 1 = 4 (<span class="set1">Set 1</span>)</li>
+                    <li>9 + 7 = 16 → 1 + 6 = 7 (<span class="set1">Set 1</span>)</li>
+                </ul>
+            </li>
+            <li>Adding a <span class="set3">Set 3</span> number to a <span class="set2">Set 2</span> number returns a <span class="set2">Set 2</span> number:
+                <ul>
+                    <li>3 + 2 = 5 (<span class="set2">Set 2</span>)</li>
+                    <li>9 + 8 = 17 → 1 + 7 = 8 (<span class="set2">Set 2</span>)</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer">6</div>
+    </div>
+</div>
+
+<!-- System 1 Digit Reduction -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Tri-Set System: Digit Reduction Rule</h2>
+        
+        <p>Multi-digit sums are reduced to a single digit by summing their digits (computing the digital root):</p>
+        <ul>
+            <li>This aligns with the number modulo 9, except multiples of 9 remain 9</li>
+            <li>The digital root ensures all results stay within the single-digit framework</li>
+        </ul>
+        
+        <h3>Examples</h3>
+        <table>
+            <tr>
+                <th>Operation</th>
+                <th>Result</th>
+                <th>After Reduction</th>
+                <th>Set Membership</th>
+            </tr>
+            <tr>
+                <td>1 + 4</td>
+                <td>5</td>
+                <td>5</td>
+                <td class="set2">Set 2</td>
+            </tr>
+            <tr>
+                <td>2 + 8</td>
+                <td>10</td>
+                <td>1 + 0 = 1</td>
+                <td class="set1">Set 1</td>
+            </tr>
+            <tr>
+                <td>1 + 2</td>
+                <td>3</td>
+                <td>3</td>
+                <td class="set3">Set 3</td>
+            </tr>
+            <tr>
+                <td>3 + 6</td>
+                <td>9</td>
+                <td>9</td>
+                <td class="set3">Set 3</td>
+            </tr>
+        </table>
+        <div class="footer">7</div>
+    </div>
+</div>
+
+<!-- System 1 Additional Operations -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Tri-Set System: Additional Operations</h2>
+        <p>The patterns in System 1 extend beyond addition to other arithmetic operations:</p>
+        
+        <table>
+            <tr>
+                <th>Operation</th>
+                <th>Pattern Example</th>
+                <th>Result</th>
+                <th>Set Mapping</th>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>Subtraction</strong></td>
+                <td><span class="set1">Set 1</span> - <span class="set1">Set 1</span></td>
+                <td>7 - 4 = 3</td>
+                <td class="set3">→ Set 3</td>
+            </tr>
+            <tr>
+                <td><span class="set1">Set 1</span> - <span class="set2">Set 2</span></td>
+                <td>7 - 2 = 5</td>
+                <td class="set2">→ Set 2</td>
+            </tr>
+            <tr>
+                <td><span class="set3">Set 3</span> - <span class="set1">Set 1</span></td>
+                <td>6 - 1 = 5</td>
+                <td class="set2">→ Set 2</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>Multiplication</strong></td>
+                <td><span class="set1">Set 1</span> × <span class="set1">Set 1</span></td>
+                <td>4 × 7 = 28 → 2+8 = 10 → 1</td>
+                <td class="set1">→ Set 1</td>
+            </tr>
+            <tr>
+                <td><span class="set2">Set 2</span> × <span class="set2">Set 2</span></td>
+                <td>5 × 5 = 25 → 2+5 = 7</td>
+                <td class="set1">→ Set 1</td>
+            </tr>
+            <tr>
+                <td><span class="set3">Set 3</span> × <span class="set3">Set 3</span></td>
+                <td>3 × 6 = 18 → 1+8 = 9</td>
+                <td class="set3">→ Set 3</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Division</strong></td>
+                <td><span class="set3">Set 3</span> ÷ <span class="set3">Set 3</span></td>
+                <td>9 ÷ 3 = 3</td>
+                <td class="set3">→ Set 3</td>
+            </tr>
+            <tr>
+                <td><span class="set1">Set 1</span> ÷ <span class="set1">Set 1</span></td>
+                <td>7 ÷ 7 = 1</td>
+                <td class="set1">→ Set 1</td>
+            </tr>
+        </table>
+        
+        <p><strong>Mathematical Foundation:</strong> These patterns emerge because the sets align with modulo 3 arithmetic:</p>
+        <ul>
+            <li><span class="set1">Set 1</span> numbers all equal 1 mod 3 (remainder 1 when divided by 3)</li>
+            <li><span class="set2">Set 2</span> numbers all equal 2 mod 3 (remainder 2 when divided by 3)</li>
+            <li><span class="set3">Set 3</span> numbers all equal 0 mod 3 (divisible by 3)</li>
+        </ul>
+        <div class="footer">8</div>
+    </div>
+</div>
+
+<!-- System 1 Visualization -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Tri-Set System: Visual Representation</h2>
+        
+        <div class="diagram">
+            <svg width="500" height="400" viewBox="0 0 500 400">
+                <!-- Set circles -->
+                <circle cx="150" cy="150" r="100" fill="#cce5ff" stroke="#004085" stroke-width="2" opacity="0.7"/>
+                <circle cx="350" cy="150" r="100" fill="#d4edda" stroke="#155724" stroke-width="2" opacity="0.7"/>
+                <circle cx="250" cy="300" r="100" fill="#fff3cd" stroke="#856404" stroke-width="2" opacity="0.7"/>
+                
+                <!-- Set labels -->
+                <text x="150" y="80" text-anchor="middle" font-size="18" font-weight="bold" fill="#004085">Set 1</text>
+                <text x="350" y="80" text-anchor="middle" font-size="18" font-weight="bold" fill="#155724">Set 2</text>
+                <text x="250" y="370" text-anchor="middle" font-size="18" font-weight="bold" fill="#856404">Set 3</text>
+                
+                <!-- Set 1 elements -->
+                <text x="120" y="140" text-anchor="middle" font-size="24" fill="#004085">1</text>
+                <text x="150" y="170" text-anchor="middle" font-size="24" fill="#004085">4</text>
+                <text x="180" y="140" text-anchor="middle" font-size="24" fill="#004085">7</text>
+                
+                <!-- Set 2 elements -->
+                <text x="320" y="140" text-anchor="middle" font-size="24" fill="#155724">2</text>
+                <text x="350" y="170" text-anchor="middle" font-size="24" fill="#155724">5</text>
+                <text x="380" y="140" text-anchor="middle" font-size="24" fill="#155724">8</text>
+                
+                <!-- Set 3 elements -->
+                <text x="220" y="300" text-anchor="middle" font-size="24" fill="#856404">3</text>
+                <text x="250" y="330" text-anchor="middle" font-size="24" fill="#856404">6</text>
+                <text x="280" y="300" text-anchor="middle" font-size="24" fill="#856404">9</text>
+                
+                <!-- Arrows for transformations -->
+                <path d="M150,200 Q200,235 250,230" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M350,200 Q300,235 250,230" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M190,120 Q250,100 310,120" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M310,180 Q250,200 190,180" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M250,230 Q280,220 300,180" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M250,230 Q220,220 200,180" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+                
+                <!-- Arrow marker definition -->
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+        <p class="centered">The diagram illustrates the transformation rules between the three sets.</p>
+        <div class="footer">9</div>
+    </div>
+</div>
+
+<!-- System 2 Introduction -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Number Mirror Symmetry: Overview</h2>
+        <h3>Basic Pattern</h3>
+        <p>System 2 defines a symmetric relationship where each single-digit number has a corresponding "mirror" number, with 9 acting as a pivotal element in the symmetry.</p>
+        <ul>
+            <li>Each single-digit number x (from 0 to 9) has a corresponding "mirror" number y</li>
+            <li>This system uses modular arithmetic to establish the mirror relationship</li>
+            <li>When either a number or its mirror is added to any starting number, the resulting sums have the same digital root</li>
+        </ul>
+        <div class="footer">10</div>
+    </div>
+</div>
+
+<!-- System 2 Pattern Characteristics -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Number Mirror Symmetry: Pattern Characteristics</h2>
+        
+        <h3>Mirror Definition</h3>
+        <p>For each single-digit number x, its mirror y is defined such that:</p>
+        <p class="centered highlight">y ≡ x (mod 9)</p>
+        <p>This ensures that y and x produce the same effect on the digital root when added to any starting number.</p>
+        
+        <h3>Chosen Representatives</h3>
+        <ul>
+            <li>x = 0, y = 9</li>
+            <li>x = 1 to 8, y = x - 9 (yielding -8 to -1)</li>
+            <li>x = 9, y = 0</li>
+        </ul>
+        <p>These choices satisfy the condition y ≡ x (mod 9)</p>
+        <p class="centered">Example: 9 ≡ 0 (mod 9), -8 ≡ 1 (mod 9), etc.</p>
+        <div class="footer">11</div>
+    </div>
+</div>
+
+<!-- System 2 Examples -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Number Mirror Symmetry: Practical Examples</h2>
+        
+        <h3>Key Function: Digital Root Preservation</h3>
+        <p>Adding x or its mirror y to any starting number results in sums with the same digital root, due to their congruence modulo 9.</p>
+        
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>Example 1: Starting number 25</h3>
+                <ul>
+                    <li>Add x = 1:
+                        <ul>
+                            <li>25 + 1 = 26</li>
+                            <li>Digital root = 2 + 6 = <span class="highlight">8</span></li>
+                        </ul>
+                    </li>
+                    <li>Add y = -8 (mirror of 1):
+                        <ul>
+                            <li>25 + (-8) = 17</li>
+                            <li>Digital root = 1 + 7 = <span class="highlight">8</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-item">
+                <h3>Example 2: Starting number 25</h3>
+                <ul>
+                    <li>Add x = 6:
+                        <ul>
+                            <li>25 + 6 = 31</li>
+                            <li>Digital root = 3 + 1 = <span class="highlight">4</span></li>
+                        </ul>
+                    </li>
+                    <li>Add y = -3 (mirror of 6):
+                        <ul>
+                            <li>25 + (-3) = 22</li>
+                            <li>Digital root = 2 + 2 = <span class="highlight">4</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="centered">In each case, the digital root remains consistent, illustrating the system's core symmetry.</p>
+        <div class="footer">12</div>
+    </div>
+</div>
+
+<!-- System 2 Table -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Number Mirror Symmetry: Original Numbers and Mirrors</h2>
+        
+        <table class="mirror-table">
+            <tr>
+                <th>Original (x)</th>
+                <th>Mirror (y)</th>
+                <th>Modular Relationship</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td class="mirror">9</td>
+                <td>9 ≡ 0 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="mirror">-8</td>
+                <td>-8 ≡ 1 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="mirror">-7</td>
+                <td>-7 ≡ 2 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="mirror">-6</td>
+                <td>-6 ≡ 3 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="mirror">-5</td>
+                <td>-5 ≡ 4 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="mirror">-4</td>
+                <td>-4 ≡ 5 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="mirror">-3</td>
+                <td>-3 ≡ 6 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="mirror">-2</td>
+                <td>-2 ≡ 7 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="mirror">-1</td>
+                <td>-1 ≡ 8 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="mirror">0</td>
+                <td>0 ≡ 9 (mod 9)</td>
+            </tr>
+        </table>
+        <div class="footer">13</div>
+    </div>
+</div>
+
+<!-- System 2 Visualization -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Number Mirror Symmetry: Visual Representation</h2>
+        
+        <div class="diagram">
+            <svg width="500" height="300" viewBox="0 0 500 300">
+                <!-- Main axis line -->
+                <line x1="50" y1="150" x2="450" y2="150" stroke="#333" stroke-width="2"/>
+                
+                <!-- Tick marks and numbers -->
+                <line x1="50" y1="145" x2="50" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="50" y="170" text-anchor="middle" font-size="14">-9</text>
+                
+                <line x1="100" y1="145" x2="100" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="100" y="170" text-anchor="middle" font-size="14">-8</text>
+                
+                <line x1="150" y1="145" x2="150" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="150" y="170" text-anchor="middle" font-size="14">-6</text>
+                
+                <line x1="200" y1="145" x2="200" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="200" y="170" text-anchor="middle" font-size="14">-3</text>
+                
+                <line x1="250" y1="145" x2="250" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="250" y="170" text-anchor="middle" font-size="14">0</text>
+                
+                <line x1="300" y1="145" x2="300" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="300" y="170" text-anchor="middle" font-size="14">3</text>
+                
+                <line x1="350" y1="145" x2="350" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="350" y="170" text-anchor="middle" font-size="14">6</text>
+                
+                <line x1="400" y1="145" x2="400" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="400" y="170" text-anchor="middle" font-size="14">9</text>
+                
+                <line x1="450" y1="145" x2="450" y2="155" stroke="#333" stroke-width="2"/>
+                <text x="450" y="170" text-anchor="middle" font-size="14">12</text>
+                
+                <!-- Mirror relationship arrows -->
+                <path d="M100,130 Q250,50 400,130" fill="none" stroke="#f1c40f" stroke-width="2" stroke-dasharray="5,5"/>
+                <text x="250" y="70" text-anchor="middle" font-size="14" fill="#f1c40f">Mirror Relationship (mod 9)</text>
+                
+                <path d="M150,130 Q250,80 350,130" fill="none" stroke="#e74c3c" stroke-width="2" stroke-dasharray="5,5"/>
+                
+                <path d="M200,130 Q250,100 300,130" fill="none" stroke="#3498db" stroke-width="2" stroke-dasharray="5,5"/>
+                
+                <path d="M250,130 C250,130 250,100 250,130" fill="none" stroke="#2ecc71" stroke-width="2" stroke-dasharray="5,5"/>
+                
+                <!-- Labels for specific mirror pairs -->
+                <circle cx="100" cy="130" r="8" fill="#f1c40f"/>
+                <text x="100" y="120" text-anchor="middle" font-size="14">-8</text>
+                
+                <circle cx="400" cy="130" r="8" fill="#f1c40f"/>
+                <text x="400" y="120" text-anchor="middle" font-size="14">1</text>
+                
+                <circle cx="150" cy="130" r="8" fill="#e74c3c"/>
+                <text x="150" y="120" text-anchor="middle" font-size="14">-6</text>
+                
+                <circle cx="350" cy="130" r="8" fill="#e74c3c"/>
+                <text x="350" y="120" text-anchor="middle" font-size="14">3</text>
+                
+                <circle cx="200" cy="130" r="8" fill="#3498db"/>
+                <text x="200" y="120" text-anchor="middle" font-size="14">-3</text>
+                
+                <circle cx="300" cy="130" r="8" fill="#3498db"/>
+                <text x="300" y="120" text-anchor="middle" font-size="14">6</text>
+                
+                <circle cx="250" cy="130" r="8" fill="#2ecc71"/>
+                <text x="250" y="120" text-anchor="middle" font-size="14">0/9</text>
+                
+                <!-- Digital root label -->
+                <text x="250" y="220" text-anchor="middle" font-size="16" font-weight="bold">Both members of each pair yield the same digital root</text>
+                <text x="250" y="240" text-anchor="middle" font-size="16">when added to any starting number</text>
+            </svg>
+        </div>
+        <div class="footer">14</div>
+    </div>
+</div>
+
+<!-- Addendum Median Calculation -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Addendum: Median Calculation in Number Mirror Symmetry</h2>
+        
+        <p>A "median" value for each original number x can be calculated using the formula:</p>
+        <p class="centered highlight">z = (x + 5) (mod 9)</p>
+        <p>With the result mapped to 9 when the modulus is 0.</p>
+        <p>This creates ordered pairs (x, z) where x is the original number and z is its median value.</p>
+        
+        <h3>Calculation Examples</h3>
+        <ul>
+            <li>For pair (0, 5): 0 + 5 = 5 (mod 9)</li>
+            <li>For pair (1, 6): 1 + 5 = 6 (mod 9)</li>
+            <li>For pair (4, 9): 4 + 5 = 9 (mod 9)</li>
+            <li>For pair (5, 1): 5 + 5 = 10 ≡ 1 (mod 9)</li>
+            <li>For pair (9, 5): 9 + 5 = 14 ≡ 5 (mod 9)</li>
+        </ul>
+        <div class="footer">15</div>
+    </div>
+</div>
+
+<!-- Addendum Table -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Addendum: Median Values Table</h2>
+        
+        <table>
+            <tr>
+                <th>Original (x)</th>
+                <th>Median (z)</th>
+                <th>Ordered Pair (x,z)</th>
+                <th>Calculation</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td class="median-highlight">5</td>
+                <td>(0,5)</td>
+                <td>0 + 5 = 5</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="median-highlight">6</td>
+                <td>(1,6)</td>
+                <td>1 + 5 = 6</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="median-highlight">7</td>
+                <td>(2,7)</td>
+                <td>2 + 5 = 7</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="median-highlight">8</td>
+                <td>(3,8)</td>
+                <td>3 + 5 = 8</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="median-highlight">9</td>
+                <td>(4,9)</td>
+                <td>4 + 5 = 9</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="median-highlight">1</td>
+                <td>(5,1)</td>
+                <td>5 + 5 = 10 ≡ 1 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="median-highlight">2</td>
+                <td>(6,2)</td>
+                <td>6 + 5 = 11 ≡ 2 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="median-highlight">3</td>
+                <td>(7,3)</td>
+                <td>7 + 5 = 12 ≡ 3 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="median-highlight">4</td>
+                <td>(8,4)</td>
+                <td>8 + 5 = 13 ≡ 4 (mod 9)</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="median-highlight">5</td>
+                <td>(9,5)</td>
+                <td>9 + 5 = 14 ≡ 5 (mod 9)</td>
+            </tr>
+        </table>
+        <div class="footer">16</div>
+    </div>
+</div>
+
+<!-- Mathematical Significance -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Mathematical Significance</h2>
+        
+        <p>These systems reveal non-traditional numeric interaction rules with symmetries grounded in modular arithmetic:</p>
+        <ul>
+            <li>The <strong>Tri-Set Numeric Interaction System</strong> structure reflects modulo 3 properties</li>
+            <li>The <strong>Number Mirror Symmetry</strong> system emphasizes digital root preservation via congruence modulo 9</li>
+        </ul>
+        
+        <h3>Potential Applications</h3>
+        <ul>
+            <li>Number theory (exploring cyclic patterns)</li>
+            <li>Cryptographic modeling (modular-based algorithms)</li>
+            <li>Algorithmic design (efficient computation methods)</li>
+            <li>Mathematical education (illustrating modular arithmetic)</li>
+        </ul>
+        <div class="footer">17</div>
+    </div>
+</div>
+
+<!-- Conclusion -->
+<div class="slide">
+    <div class="slide-content">
+        <h2>Conclusion</h2>
+        
+        <p>The numeric transformation systems introduced here highlight complex, symmetrical interactions that enrich our understanding of mathematical structures:</p>
+        <ul>
+            <li>The <strong>Tri-Set Numeric Interaction System</strong> provides a framework for understanding how numbers transfer between specific groups</li>
+            <li>The <strong>Number Mirror Symmetry</strong> system demonstrates how different numbers can produce equivalent effects on digital roots</li>
+            <li>Both systems provide a foundation for future research and practical applications</li>
+            <li>Further exploration could reveal additional patterns and properties within these frameworks</li>
+        </ul>
+        
+        <p class="centered" style="margin-top: 30px;">© 2025 · For Academic Purposes</p>
+        <div class="footer">18</div>
+    </div>
+</div>
+
+</body>
+</html>
